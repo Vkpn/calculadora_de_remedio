@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Share+Tech&display=swap');
+
+:root{
+    --fontpadrao: Arial, Helvetica, sans-serif;
+    --fonttitulo: 'Oswald'; 
+    --fontformulario:  'Share Tech';
+
+    --cor1: #EAF2F5;
+    --cor2: #008EAA;
+    --cor3: #0067A6;
+    --cor4: #013a5e;
+    --cordestaque: #FF5907;
+}
+
+*{
+    font-family: var(--fontpadrao);
+    background-color: var(--cor1);
+    margin: 0px;
+    padding: 0px;
+    opacity: 100%;
+}
+
+body{
+    background-image: url(imagens/f1.3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    height: 100vh;
+}
+
+header{
+    background-color: var(--cor4);
+    max-width: 100vw;
+    text-align: center;
+    padding: 40px;
+    margin: 0px;
+    box-shadow: 1px 1px 11px 2px black;
+}
+
+h1{
+    color: white;
+    background-color: var(--cor4);
+    font-family: var(--fonttitulo);
+    font-size: 6vmin;
+    margin: 0px;
+}
+
+main{
+    max-width: 1000px;    
+    height: 600px;
+    margin: auto;
+    padding: 0;
+    opacity: 80%;
+}
+
+h2{
+    text-align: center;
+    padding: 15px;
+    font-size: 3vh;
+    font-family: var(--fontformulario);
+    font-weight: bolder;
+}
+
+main>div>h2, p{
+    font-family: var(--fontformulario);
+    opacity: 100%;
+    font-weight: bolder;
+}
+
+main>div{
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+p#criador{
+    background-color: var(--cor4);
+    color: white;
+    font-size: 20px;   
+    font-family: var(--fontformulario);
+    font-size: 25px;
+    font-weight: normal;
+}
+
+p#criador>a{
+    background-color: var(--cor4);
+    color: var(--cordestaque);
+    text-decoration: none;
+    font-family: var(--fontformulario);
+    font-weight: bolder;
+}
+
+p#creditos{
+    background-color: var(--cor4);
+    color: white;
+    font-size: 12px;
+    font-family: var(--fontformulario);
+    font-weight: normal;
+}
+
+p#creditos>a{
+    background-color: var(--cor4);
+    color: var(--cordestaque);
+    text-decoration: none;
+    font-family: var(--fontformulario);
+}
