@@ -29,6 +29,7 @@ body{
     background-position: right center;
     display: block;
     height: 100vh;
+    min-height: 100vh;
 }
 
 header{
@@ -54,7 +55,7 @@ h1{
 main{
     background-color: rgba(255, 255, 255, 0.1);
     max-width: 1000px;    
-    min-height: 70vh;
+    max-height: 70vh;
     margin: auto;
     padding: 0;
     backdrop-filter: blur(10px);
@@ -72,7 +73,7 @@ h2{
     background-color: rgba(255, 255, 255, 0);
 }
 
-#fform{
+#fform{ /* formulario */
     font-family: var(--fontformulario);
     font-weight: bolder;
     background-color: rgba(255, 255, 255, 0);
@@ -81,27 +82,64 @@ h2{
     text-align: center;
 }
 
-main>div#fform>p{
+main>div#fform>p{ /* Nome do Remedio */
     font-family: var(--fontformulario);
     font-weight: bolder;
     background-color: rgba(255, 255, 255, 0);
     font-size: 2.3vh;
     width: 950px;
     max-width: 90vw;
-    display: inline-flex;
     border: 3px groove rgba(119, 119, 119, 0.171);
     padding: 5px 10px;
     margin: 2px 3px;
     border-radius: 10px;
 }
 
-#fremedio{
+#fremedio{ /* input do remedio */
     margin: 0px;
     width: 80vw;
     max-width: 750px;
     height: 25px;
     border-radius: 5px;
-    right: 0px; 
+    right: 0px;
+}
+
+main>div#fform>div>p{  /* hora intervalo e dias */
+    font-family: var(--fontformulario);
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 2.3vh;
+    width: 30vw;
+    padding: 5px;
+    display: flex;
+    border: 3px groove rgba(119, 119, 119, 0.171);
+    border-radius: 10px;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#fdias, #fintervalo, #fhora{ /* input dos itens do formulário*/
+    margin: 0px;
+    width: 10vw;
+    max-width: 750px;
+    height: 25px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 5px;
+    padding: 0 auto;
+    text-align: center;
+}
+
+main>div#fform>div#fhid{ /* div do formulario HID */
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    width: 970px;
+    max-width: 90vw;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 #fres{
@@ -111,10 +149,6 @@ main>div#fform>p{
     height: 800px;
     max-height: 50vh;
     overflow-y: auto;
-}
-
-main>div{
-    margin: auto;
 }
 
 footer{
