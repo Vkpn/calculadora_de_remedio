@@ -19,14 +19,15 @@
     background-color: var(--cor1);
     margin: 0px;
     padding: 0px;
-    opacity: 100%;
 }
 
 body{
     background-image: url(imagens/fundo.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
+    display: block;
     height: 100vh;
 }
 
@@ -37,6 +38,8 @@ header{
     padding: 40px;
     margin: 0px;
     box-shadow: 1px 1px 11px 2px black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 h1{
@@ -48,32 +51,68 @@ h1{
 }
 
 main{
+    background-color: rgba(255, 255, 255, 0.1);
     max-width: 1000px;    
-    height: 600px;
+    min-height: 70vh;
     margin: auto;
     padding: 0;
-    opacity: 80%;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 13px 1px black;
 }
 
 h2{
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     font-size: 3vh;
     font-family: var(--fontformulario);
     font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0);
 }
 
-main>div>h2, p{
+#fform{
     font-family: var(--fontformulario);
-    opacity: 100%;
     font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+main>div#fform>p{
+    font-family: var(--fontformulario);
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 2.3vh;
+    width: 950px;
+    max-width: 90vw;
+    display: inline-flex;
+    border: 3px groove rgba(119, 119, 119, 0.171);
+    padding: 5px 10px;
+    margin: 2px 3px;
+    border-radius: 10px;
+}
+
+#fremedio{
+    margin: 0 25px;
+    width: 80vw;
+    max-width: 700px;
+    right: 0px; 
+}
+
+#fres{
+    font-family: var(--fontformulario);
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0);
+    height: 800px;
+    max-height: 50vh;
+    overflow-y: auto;
 }
 
 main>div{
-    max-width: 1000px;
     margin: auto;
 }
-
 
 footer{
     position: fixed;
