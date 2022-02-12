@@ -48,6 +48,7 @@ h1{
     font-family: var(--fonttitulo);
     font-size: 6vmin;
     margin: 0px;
+    text-shadow: 2px 3px 7px black;
 }
 
 main{
@@ -95,9 +96,11 @@ main>div#fform>p{
 }
 
 #fremedio{
-    margin: 0 25px;
+    margin: 0px;
     width: 80vw;
-    max-width: 700px;
+    max-width: 750px;
+    height: 25px;
+    border-radius: 5px;
     right: 0px; 
 }
 
