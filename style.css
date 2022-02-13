@@ -11,7 +11,7 @@
     --cor2: #008EAA;
     --cor3: #0067A6;
     --cor4: #013a5e;
-    --cordestaque: #FF5907;
+    --cordestaque: #ff681c;
 }
 
 *{
@@ -28,12 +28,11 @@ body{
     background-size: cover;
     background-position: right center;
     display: block;
-    height: 100vh;
-    min-height: 100vh;
+    height: 105vh;
 }
 
 header{
-    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3), var(--cor4));
     max-width: 100vw;
     text-align: center;
     padding: 40px;
@@ -45,7 +44,7 @@ header{
 
 h1{
     color: white;
-    background-color: var(--cor4);
+    background-color: rgba(255, 255, 255, 0);
     font-family: var(--fonttitulo);
     font-size: 6vmin;
     margin: 0px;
@@ -55,10 +54,9 @@ h1{
 main{
     background-color: rgba(255, 255, 255, 0.1);
     max-width: 1000px;    
-    max-height: 70vh;
     margin: auto;
-    padding: 0;
-    backdrop-filter: blur(10px);
+    padding: 10px;
+    backdrop-filter: blur(8px);
     border-radius: 20px;
     margin-top: 20px;
     box-shadow: 0px 0px 13px 1px black;
@@ -66,7 +64,6 @@ main{
 
 h2{
     text-align: center;
-    padding: 10px;
     font-size: 3vh;
     font-family: var(--fontformulario);
     font-weight: bolder;
@@ -87,11 +84,11 @@ main>div#fform>p{ /* Nome do Remedio */
     font-weight: bolder;
     background-color: rgba(255, 255, 255, 0);
     font-size: 2.3vh;
-    width: 950px;
+    width: 970px;
     max-width: 90vw;
     border: 3px groove rgba(119, 119, 119, 0.171);
-    padding: 5px 10px;
-    margin: 2px 3px;
+    padding: 10px 0px;
+    margin: 2px;
     border-radius: 10px;
 }
 
@@ -104,13 +101,12 @@ main>div#fform>p{ /* Nome do Remedio */
     right: 0px;
 }
 
-main>div#fform>div>p{  /* hora intervalo e dias */
+main>div#fform>div>p{  /* hora, intervalo e dias */
     font-family: var(--fontformulario);
     font-weight: bolder;
     background-color: rgba(255, 255, 255, 0);
     font-size: 2.3vh;
     width: 30vw;
-    padding: 5px;
     display: flex;
     border: 3px groove rgba(119, 119, 119, 0.171);
     border-radius: 10px;
@@ -121,7 +117,6 @@ main>div#fform>div>p{  /* hora intervalo e dias */
 }
 
 #fdias, #fintervalo, #fhora{ /* input dos itens do formulário*/
-    margin: 0px;
     width: 10vw;
     max-width: 750px;
     height: 25px;
@@ -135,20 +130,47 @@ main>div#fform>div>p{  /* hora intervalo e dias */
 main>div#fform>div#fhid{ /* div do formulario HID */
     background-color: rgba(255, 255, 255, 0);
     display: flex;
-    width: 970px;
-    max-width: 90vw;
+    width: 980px;
+    max-width: 91vw;
     justify-content: space-around;
     margin: 0 auto;
-    padding: 0 10px;
+}
+
+#fgravar{ /* botao */
+    border-radius: 10px;
+    background-color: #ff681c ;
+    margin-left: 5px;
+    width: 25vw;
+    font-family: var(--fontformulario);
+    font-size: 2.3vh;
+}
+
+#fgravar:hover{ /* hover no botão */
+    background-color: rgba(252, 129, 67, 0.747) ;
+}
+
+#fgravar:active{ /* botao clicado */
+    background-color: #ff681c;
 }
 
 #fres{
     font-family: var(--fontformulario);
     font-weight: bolder;
     background-color: rgba(255, 255, 255, 0);
-    height: 800px;
+    height: 40vh;
+    width: 980px;
+    max-width: 90vw;
+    margin: 10px auto;
     max-height: 50vh;
+    border: 3px groove rgba(119, 119, 119, 0.171);
+    border-radius: 10px;
     overflow-y: auto;
+}
+
+#fres>p{
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px;
+    font-size: 2vh;
 }
 
 footer{
