@@ -15,16 +15,26 @@
     <main>
         <div id="fform">
             <h2>Preencha para calcular os dias e horários corretos para tomar seus remédios.</h2>
-            <p style="display: block; margin: 5px auto;">Nomedo do Remédio: <input type="text" name="fremedio" id="fremedio" ></p>
+            <p style="display: block; margin: 5px auto;">Nome do Remédio: <input type="text" name="fremedio" id="fremedio" ></p>
             <div id="fhid">
                 <p>Horario da primeira dose: <input type="time" name="fhora" id="fhora"></p>
-                <p style="margin: 0px 4px;">A cada <input type="number" name="fintervalo" id="fintervalo" min="1" max="24"> horas. </p>
+                <p style="margin: 0px 4px;">A cada 
+                    <select name="fintervalo" id="fintervalo" style="height: 29px; border: 2px inset rgb(119, 119, 119)">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                    </select> horas. </p>
                 <p>Por <input type="number" name="fdias" id="fdias" min="0"> dias.</p>
                 <input type="button" value="Gravar" id="fgravar" onclick="gravar()">
             </div>
         </div>
         <div id="fres">
         </div>
+        <input type="button" value="Imprimir" id="imprimir" onclick="imprimir()">
     </main>
     <footer>
         <p id="criador">Site criado por <a href="https://github.com/Vkpn" target="_blank" rel="external">Victor Okopni</a></p>

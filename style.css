@@ -24,11 +24,12 @@
 body{
     background-image: url(imagens/fundo.jpg);
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: cover;
     background-position: right center;
     display: block;
-    height: 105vh;
+    height: 825px;
+    min-height: 100vh;
 }
 
 header{
@@ -138,18 +139,18 @@ main>div#fform>div#fhid{ /* div do formulario HID */
 
 #fgravar{ /* botao */
     border-radius: 10px;
-    background-color: #ff681c ;
+    background-color: var(--cordestaque) ;
     margin-left: 5px;
     width: 25vw;
     font-family: var(--fontformulario);
     font-size: 2.3vh;
 }
 
-#fgravar:hover{ /* hover no botão */
+#fgravar:hover{ /* hover no botão gravar */
     background-color: rgba(252, 129, 67, 0.747) ;
 }
 
-#fgravar:active{ /* botao clicado */
+#fgravar:active{ /* botao clicado gravar */
     background-color: #ff681c;
 }
 
@@ -167,10 +168,61 @@ main>div#fform>div#fhid{ /* div do formulario HID */
     overflow-y: auto;
 }
 
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--cor1);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--cor4);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#fres>h3{
+    font-family: var(--fontformulario);
+    padding: 2px 5px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: var(--cor3);
+    color: white;
+    font-size: 2.3vh;
+    box-shadow: 0px 2px 5px 0px black;
+}
+
+#fres>p#horarios{
+    display: inline;
+}
+
 #fres>p{
     background-color: rgba(255, 255, 255, 0);
     padding: 5px;
     font-size: 2vh;
+}
+
+#imprimir{
+    display: block;
+    margin: auto;
+    padding: 8px;
+    background-color: var(--cordestaque);
+    width: 980px;
+    max-width: 90vw;
+    border-radius: 10px;
+    font-family: var(--fontformulario);
+    font-size: 2.3vh;
+}
+
+#imprimir:hover{ /* hover no botão imprimir */
+    background-color: rgba(252, 129, 67, 0.747) ;
+}
+
+#imprimir:active{ /* botao clicado imprimir */
+    background-color: #ff681c;
 }
 
 footer{
