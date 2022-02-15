@@ -237,14 +237,6 @@ main>div#fform>div#fhid{ /* div do formulario HID */
     font-size: 2.3vh;
 }
 
-#imprimir:hover{ /* hover no botão imprimir */
-    background-color: rgba(252, 129, 67, 0.747) ;
-}
-
-#imprimir:active{ /* botao clicado imprimir */
-    background-color: #ff681c;
-}
-
 footer{
     max-width: 100vw;
     text-align: center;

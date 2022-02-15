@@ -43,7 +43,7 @@ function gravar(){ // validaçao de erro no formulario
 
                 for(var proxh = parseInt(hora.value.toString()); proxh < 24; proxh += int){ //impressao dos horarios a tomar o remedio
                     
-                    var itemhora = document.createElement(`p`)
+                    var itemhora = document.createElement(`span`)
                     itemhora.innerHTML +=`&#128306 ${proxh}:${min} | `
                     itemhora.style.display = `inline-block`
                     itemhora.style.backgroundColor = `rgba(255, 255, 255, 0)`
@@ -56,7 +56,7 @@ function gravar(){ // validaçao de erro no formulario
                     
                     if(proxh < 0){ // validaçao de numero negativo
                     }else{
-                        var itemhora = document.createElement(`p`)
+                        var itemhora = document.createElement(`span`)
                         itemhora.innerHTML += `&#128306 ${proxh}:${min} | `
                         itemhora.style.display = `inline-block`
                         itemhora.style.backgroundColor = `rgba(255, 255, 255, 0)`
@@ -70,7 +70,7 @@ function gravar(){ // validaçao de erro no formulario
                     
                     if(proxh < 0){ // validaçao de numero negativo
                     }else{
-                        var itemhora = document.createElement(`p`)
+                        var itemhora = document.createElement(`span`)
                         itemhora.innerHTML += `&#128306 ${proxh}:${min} | `
                         itemhora.style.display = `inline-block`
                         itemhora.style.backgroundColor = `rgba(255, 255, 255, 0)`
@@ -96,13 +96,11 @@ function imprimir(){ // funcao imprimir
 
     var dados = document.getElementById(`fres`).innerHTML
     var imprimir = window.open()
-    imprimir.document.write(innerHTML = `<p style="text-align: center;"> Obrigado por utilizar meu site! </p>` + `<div style="font-size: 1vh; padding: 0px 100px">${dados}</div>` + `<p style="text-align: center;">Tome seus remédios no horario certo, acompanhe o tratamento junto ao seu médico de confiança e MELHORAS!!`)
+    imprimir.document.write(innerHTML = `<p style="text-align: center;"> Obrigado por utilizar meu site! </p>` + `<div style="font-size: 1.2vh; padding: 0px 20px">${dados}</div>` + `<p style="text-align: center;">Tome seus remédios no horario certo, acompanhe o tratamento junto ao seu médico de confiança e MELHORAS!!`)
     imprimir.print()
-
 }
 
 function reset(){ // funcao reset
     var btn = document.getElementById(`reset`)
     btn.addEventListener(`click`, function(){location.reload()})
-
 }
