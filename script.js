@@ -23,7 +23,9 @@ function gravar(){ // validaçao de erro no formulario
             alert(`[ERRO] Preencher os dias corretamente!`)
             dias.focus()
         }
-    } else {  
+    } else {
+        document.getElementById(`fres`).style.border = `3px groove rgba(119, 119, 119, 0.171)`
+
         var item = document.createElement(`h3`) // Impressao do nome do remedio
         item.innerHTML = `&#128138 ${remedio.value.toUpperCase()}:`
         res.appendChild(item)
@@ -95,8 +97,9 @@ function gravar(){ // validaçao de erro no formulario
 function imprimir(){ // funcao imprimir
 
     var dados = document.getElementById(`fres`).innerHTML
-    var imprimir = window.open()
+    var imprimir = window.open(``,``,`width=1200,height=1000`)
     imprimir.document.write(innerHTML = `<p style="text-align: center;"> Obrigado por utilizar meu site! </p>` + `<div style="font-size: 1.2vh; padding: 0px 20px">${dados}</div>` + `<p style="text-align: center;">Tome seus remédios no horario certo, acompanhe o tratamento junto ao seu médico de confiança e MELHORAS!!`)
+    imprimir.document.close()
     imprimir.print()
 }
 

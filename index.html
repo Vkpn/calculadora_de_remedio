@@ -9,38 +9,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Calculadora de Horário para Remédios.</h1>
-    </header>
-    <main>
-        <div id="fform">
-            <h2>Preencha para calcular os dias e horários corretos para tomar seus remédios.</h2>
-            <p style="display: block; margin: 5px auto;">Nome do Remédio: <input type="text" name="fremedio" id="fremedio" ></p>
-            <div id="fhid">
-                <p>Horario da primeira dose: <input type="time" name="fhora" id="fhora"></p>
-                <p style="margin: 0px 4px;">A cada 
-                    <select name="fintervalo" id="fintervalo" style="height: 29px; border: 2px inset rgb(119, 119, 119)">
-                        <option value="4">4</option>
-                        <option value="6">6</option>
-                        <option value="8">8</option>
-                        <option value="12">12</option>
-                        <option value="24">24</option>
-                    </select> horas. </p>
-                <p>Por <input type="number" name="fdias" id="fdias" min="1"> dias.</p>
+    <div id="principal">
+        <header>
+            <h1>Calculadora de Horário para Remédios.</h1>
+        </header>
+        <main>
+            <div id="fform">
+                <h2>Preencha para calcular os dias e horários corretos para tomar seus remédios.</h2>
+                <p>Nome do Remédio: <input type="text" name="fremedio" id="fremedio" ></p>
+                <div id="fhid">
+                    <p>Horario da primeira dose: <input type="time" name="fhora" id="fhora"></p>
+                    <p>A cada
+                        <select name="fintervalo" id="fintervalo">
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                            <option value="8">8</option>
+                            <option value="12">12</option>
+                            <option value="24">24</option>
+                        </select> horas. </p>
+                    <p>Por <input type="number" name="fdias" id="fdias" min="1"> dias.</p>
+                </div>
+                <div id="botoes">
+                    <input type="reset" value="Apagar" id="reset" onclick="reset()">
+                    <input type="button" value="Gravar" id="fgravar" onclick="gravar()">
+                </div>
             </div>
-            <div id="botoes">
-                <input type="reset" value="Apagar" id="reset" onclick="reset()">
-                <input type="button" value="Gravar" id="fgravar" onclick="gravar()">
+            <div id="fres">
             </div>
-        </div>
-        <div id="fres">
-        </div>
-        <input type="button" value="Imprimir" id="imprimir" onclick="imprimir()" disabled="true">
-    </main>
-    <footer>
-        <p id="criador">Site criado por <a href="https://github.com/Vkpn" target="_blank" rel="external">Victor Okopni</a></p>
-        <p id="creditos">Imagens por <a href="https://www.pexels.com/pt-br/@shvetsa" target="_blank" rel="external">Anna Shvets</a> no <a href="https://www.pexels.com/pt-br/" target="_blank" rel="external">Pexels</a></p>
-    </footer>
+            <div id="contimp">
+                <input type="button" value="Imprimir" id="imprimir" onclick="imprimir()" disabled="true">
+            </div>
+        </main>
+    </div>
+    <div id="rodape">
+        <footer>
+            <p id="criador">Site criado por <a href="https://github.com/Vkpn" target="_blank" rel="external">Victor Okopni</a></p>
+            <p id="creditos">Imagens por <a href="https://www.pexels.com/pt-br/@shvetsa" target="_blank" rel="external">Anna Shvets</a> no <a href="https://www.pexels.com/pt-br/" target="_blank" rel="external">Pexels</a></p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
