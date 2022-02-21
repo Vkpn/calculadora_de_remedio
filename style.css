@@ -113,13 +113,13 @@ div#fform>p{ /* --------------------------------------- Nome do Remedio */
     flex-direction: row;
     justify-content: space-between;
     border-radius: 20px;
-    min-width: 400px;
+    flex-grow: 1;
     flex-wrap: wrap;
     margin: 5px 0px;
     background-color: #00000000;
 }
 
-@media (max-width: 895px) { /* ------------------------------ Media para quebra do formulário */
+@media (max-width: 955px) { /* ------------------------------ Media para quebra do formulário */
     #fhid{
         flex-direction: column;
     }
