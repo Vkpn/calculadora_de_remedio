@@ -110,11 +110,9 @@ div#fform>p{ /* --------------------------------------- Nome do Remedio */
 
 #fhid{ /* ---------------------------------------------------- Div do formulario */
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     border-radius: 20px;
     flex-grow: 1;
-    flex-wrap: wrap;
     margin: 5px 0px;
     background-color: #00000000;
 }
