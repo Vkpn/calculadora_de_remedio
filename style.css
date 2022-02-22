@@ -144,6 +144,16 @@ div#fform>p{ /* --------------------------------------- Nome do Remedio */
     text-align: center;
 }
 
+@media (max-width: 955px) {
+    #fdias, #fintervalo{
+        width: 60px;
+    }
+    #fhora{
+        width: 80px;
+    }
+
+}
+
 #botoes{ /* -------------------------------------------------------------- Div dos Botoes */
     background-color: #00000000;
     display: flex;
