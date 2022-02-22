@@ -105,7 +105,6 @@ div#fform>p{ /* --------------------------------------- Nome do Remedio */
     height: 25px;
     margin: 5px 0px;
     text-align: center;
-    
 }
 
 #fhid{ /* ---------------------------------------------------- Div do formulario */
@@ -152,7 +151,6 @@ div#fform>p{ /* --------------------------------------- Nome do Remedio */
     #fhora{
         width: 80px;
     }
-
 }
 
 #botoes{ /* -------------------------------------------------------------- Div dos Botoes */
@@ -215,7 +213,6 @@ div#fform>p{ /* --------------------------------------- Nome do Remedio */
     #fres>p{
         font-size: 0.8rem;
     }
-    
 }
 
 #contimp{ /* --------------------------------------------------------------- Container flex do botão Imprimir */

@@ -26,6 +26,8 @@ function gravar(){ // validaçao de erro no formulario
     } else {
         document.getElementById(`fres`).style.border = `3px groove rgba(119, 119, 119, 0.171)`
 
+        imp.disabled = false
+
         var item = document.createElement(`h3`) // Impressao do nome do remedio
         item.innerHTML = `&#128138 ${remedio.value.toUpperCase()}:`
         res.appendChild(item)
@@ -79,19 +81,14 @@ function gravar(){ // validaçao de erro no formulario
                         itemdia.appendChild(itemhora)
                     }
                 }
-                
             }
-
         }
-
+        document.getElementById(`fremedio`).value=`` // limpesa do formulario
+        document.getElementById(`fhora`).value=``
+        document.getElementById(`fintervalo`).value=``
+        document.getElementById(`fdias`).value=``
+        remedio.focus()
     }
-    
-    document.getElementById(`fremedio`).value=`` // limpesa do formulario
-    document.getElementById(`fhora`).value=``
-    document.getElementById(`fintervalo`).value=``
-    document.getElementById(`fdias`).value=``
-    imp.disabled = false
-    remedio.focus()
 } 
 
 function imprimir(){ // funcao imprimir
