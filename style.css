@@ -145,7 +145,7 @@ div#fform>p{ /* --------------------------------------- Nome do Remedio */
     border: 2px inset gray;
 }
 
-@media (max-width: 955px) {
+@media (max-width: 955px) { /* ---------------------------------------------- Media para alteração do input do formulário em telas pequenas */
     #fdias, #fintervalo{
         width: 60px;
     }
@@ -207,7 +207,15 @@ div#fform>p{ /* --------------------------------------- Nome do Remedio */
 #fres>p{ /* ---------------------------------------------------------------- Paragrafos criados pelo JS */
     background-color: rgba(255, 255, 255, 0);
     padding: 5px;
-    font-size: 2vh;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+@media (max-width: 955px){
+    #fres>p{
+        font-size: 0.8rem;
+    }
+    
 }
 
 #contimp{ /* --------------------------------------------------------------- Container flex do botão Imprimir */
